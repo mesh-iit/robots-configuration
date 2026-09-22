@@ -95,8 +95,8 @@
             <xi:include href="wrappers/inertials/head-inertials_wrapper.xml" disabled_by="disable_head"/>
         
             <!-- CARTESIAN CONTROL -->
-            <xi:include href="cartesian/right_arm-cartesian.xml" disabled_by="disable_right_arm"/>
-            <xi:include href="cartesian/left_arm-cartesian.xml" disabled_by="disable_left_arm"/>
+            <xi:include href="cartesian/right_arm-cartesian.xml" disabled_by="disable_right_arm disable_torso"/>
+            <xi:include href="cartesian/left_arm-cartesian.xml" disabled_by="disable_left_arm disable_torso"/>
             
             <!-- WHOLEBODYDYNAMICS -->
             <xi:include href="estimators/wholebodydynamics.xml" enabled_by="enable_wholebodydynamics"/>
