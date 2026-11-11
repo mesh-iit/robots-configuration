@@ -18,7 +18,7 @@
         <param name="motorNominalCurrents">     5000                5000                5000                5000                </param>
         <param name="motorPeakCurrents">        6000                10000               6000                10000               </param>
         <param name="motorOverloadCurrents">    15000               15000               15000               15000               </param>
-        <param name="motorPwmLimit">            10000               10000               10000               10000               </param>
+        <param name="motorPwmLimit">            32000               32000               32000               32000               </param>
     </group>
    
     <group name="TIMEOUTS">
@@ -35,7 +35,7 @@
     </group>
     
     <group name="CONTROLS">
-      <param name="positionControl">            POS_PID_OUTVEL      POS_PID_OUTVEL      POS_PID_OUTVEL      POS_PID_OUTVEL     </param>
+      <param name="positionControl">            POS_PID_DEFAULT      POS_PID_DEFAULT      POS_PID_DEFAULT      POS_PID_DEFAULT     </param>
       <param name="velocityControl">            POS_PID_DEFAULT     POS_PID_DEFAULT     POS_PID_DEFAULT     POS_PID_DEFAULT     </param>
       <param name="mixedControl">               POS_PID_DEFAULT     POS_PID_DEFAULT     POS_PID_DEFAULT     POS_PID_DEFAULT     </param>
       <param name="torqueControl">              TRQ_PID_DEFAULT     TRQ_PID_DEFAULT     TRQ_PID_DEFAULT     TRQ_PID_DEFAULT     </param>
@@ -54,7 +54,7 @@
         <param name="kp">            -1066.66     2066.66    -711.11    -1066.66    </param>
         <param name="kd">               0.00        0.00       0.00       0.00      </param>
         <param name="ki">          -10666.64    14222.18   -7111.09    -1066.64     </param>
-        <param name="maxOutput">        8000        8000       8000       8000      </param>
+        <param name="maxOutput">       32000        32000       32000       32000      </param>
         <param name="maxInt">           1500        1500        750       1000        </param>
         <param name="stictionUp">          0           0          0          0      </param>
         <param name="stictionDown">        0           0          0          0      </param>
@@ -134,6 +134,9 @@
         <param name="kff">          1           1           1        1       </param>
     </group>
     <!-- custom PIDs: end -->
-    
+    <!-- <group name="OTHER_CONTROL_PARAMETERS">
+        <param name="deadZone">             0.08      0.08   0.08     0.08       </param>  
+    </group> -->
+
 </device>
 
